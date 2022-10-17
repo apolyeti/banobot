@@ -143,7 +143,7 @@ client.on('interactionCreate', async interaction => {
             'i was actually an experiment',
             'i stole my pfp off some stupid cartoon',
             'im actually useless',
-            "because it's you, i should tell you that you smell like absolute shit"
+            "because it's you, i should tell you that you smell awful"
         ]
         const randomSecret = listOfSecrets[Math.round(Math.random() * 4)]
         const username = interaction.member.user.username
@@ -167,7 +167,7 @@ client.on('interactionCreate', async interaction => {
             await interaction.reply({embeds: [randReddit]})
         } catch(err) {
             console.log(err)
-            interaction.reply('sorry try again the person who wrote this code fucking sucks donkey dick so this shit isnt perfect')
+            interaction.reply('sorry try again')
         }
     } else if (commandName === 'notinteresting') {
         try {
@@ -180,7 +180,7 @@ client.on('interactionCreate', async interaction => {
             await interaction.reply({embeds : [randReddit]})
         } catch(err) {
             console.log(err)
-            interaction.reply('sorry try again the person who wrote this code fucking sucks donkey dick so this shit isnt perfect')
+            interaction.reply('sorry try again')
         }  
     } else if (commandName === 'showerthoughts') {
         try {
@@ -192,7 +192,7 @@ client.on('interactionCreate', async interaction => {
             await interaction.reply({embeds : [randReddit]})
         } catch(err) {
             console.log(err)
-            interaction.reply('sorry try again the person who wrote this code fucking sucks donkey dick so this shit isnt perfect')
+            interaction.reply('sorry try again')
         }
 
     } else if (commandName === 'help') {
